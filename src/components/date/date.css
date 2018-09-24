@@ -1,0 +1,52 @@
+.date {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.label {
+  color: #c2c2c2;
+  font-size: 20px;
+}
+
+.DayPicker {
+  background-color: #292929;
+}
+
+.DayPickerInput input {
+  background-color: rgba(0,0,0,0);
+  border: 0;
+  color: #c2c2c2;
+  font-size: 30px;
+  width: 180px;
+}
+
+.DayPickerInput input:hover {
+  color: #FFB300;
+  cursor: pointer;
+}
+
+.DayPicker-Day, .DayPicker-Caption {
+  color: #c2c2c2;
+}
+
+.DayPicker-Day:hover {
+  color: #292929;
+  background-color: #c2c2c2;
+}
+
+.DayPicker-Day--today {
+  color: #FFB300;
+}
+
+.DayPicker-Day--outside:hover {
+  background-color: rgba(0,0,0,0);
+}
+
+.clear-date {
+  color: #d32f2f;
+  margin-left: 20px;
+}
+
+.tool-tip {
+  color: #c2c2c2;
+}
