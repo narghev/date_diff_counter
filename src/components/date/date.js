@@ -14,11 +14,12 @@ class FinalDate extends React.PureComponent {
       label,
       date,
       onChange,
-      onClear
+      onClear,
+      className
     } = this.props;
     const value = date ? moment(date).format('DD-MMM-YYYY') : '';
     return(
-      <div className="date">
+      <div className={`date ${className}`}>
         <span className="label">{label}</span>
         <div>
           <DayPickerInput

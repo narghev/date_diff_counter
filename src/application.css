@@ -1,0 +1,14 @@
+.start_end_wrapper {
+  display: flex;
+  width: 100vw;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.start_end_wrapper .date {
+  margin: 10px 20px;
+}
+
+.start_end_wrapper .end {
+  margin-right: 100px;
+}

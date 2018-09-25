@@ -7,6 +7,8 @@ import {
   clearDate
 } from 'helper/date_helper';
 
+import './application.css';
+
 const end = 'end';
 const start = 'start';
 
@@ -62,6 +64,7 @@ class App extends React.Component {
           date={endDate}
           onChange={this.onEndDateChange}
           onClear={this.clearEndDate}
+          className="end"
         />
       </div>
     );
