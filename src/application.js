@@ -2,6 +2,7 @@ import React from 'react';
 import moment from 'moment';
 import Date from 'components/date';
 import DaysLeft from 'components/days_left';
+import PercentPassed from 'components/percent_passed'
 import {
   getDate,
   setDate,
@@ -62,6 +63,13 @@ class App extends React.Component {
     return daysLeft;
   };
 
+  get percent(){
+    const {endDate, startDate} = this.state;
+    if (!endDate || !startDate) return null;
+
+    return 50;
+  }
+
   render() {
     const {endDate, startDate} = this.state;
 
@@ -83,6 +91,7 @@ class App extends React.Component {
           />
         </div>
         <DaysLeft number={this.daysLeft} />
+        <PercentPassed percent={this.percent} />
       </div>
     );
   }

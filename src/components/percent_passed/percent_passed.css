@@ -1,0 +1,25 @@
+.percent_wrapper {
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #c2c2c2;
+}
+
+.percent_wrapper .percent {
+  font-size: 100px;
+}
+
+.percent_wrapper .sign {
+  font-size: 50px;
+}
+
+.percent_wrapper .text {
+  font-style: italic;
+}
+
+.percent_wrapper .text:first-child {
+  font-size: 30px;
+}
