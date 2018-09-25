@@ -67,7 +67,20 @@ class App extends React.Component {
     const {endDate, startDate} = this.state;
     if (!endDate || !startDate) return null;
 
-    return 50;
+    const endDateObj = moment(endDate);
+    const startDateObj = moment(startDate);
+    const today = moment();
+
+    const startEndDiff = endDateObj.diff(startDateObj);
+    const startEndDuration = moment.duration(startEndDiff).asSeconds();
+
+    const todayStartDiff = today.diff(startDateObj);
+    const todayStartDuration = moment.duration(todayStartDiff).asSeconds();
+
+    const percent = (todayStartDuration / startEndDuration) * 100;
+    const precision = percent.toPrecision(5);
+
+    return precision;
   }
 
   render() {
