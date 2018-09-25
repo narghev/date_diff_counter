@@ -1,0 +1,22 @@
+.days_left_wrapper {
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #c2c2c2;
+}
+
+.days_left_wrapper .number {
+  font-size: 200px;
+}
+
+.days_left_wrapper .text {
+  font-style: italic;
+}
+
+.days_left_wrapper .error {
+  font-size: 50px;
+  color: #747471
+}
